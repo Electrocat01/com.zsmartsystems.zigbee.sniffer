@@ -9,7 +9,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<zss.version>1.4.12-SNAPSHOT</zss.version>
+		<zss.version>1.4.11</zss.version>
 	</properties>
 
 	<dependencies>
@@ -55,6 +55,7 @@
 							<goal>shade</goal>
 						</goals>
 						<configuration>
+							<shadedArtifactAttached>true</shadedArtifactAttached>
 							<transformers>
 								<!-- add Main-Class to manifest file -->
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
